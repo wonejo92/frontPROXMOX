@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list >
+
+    <ion-list >
+      <br>
+      <ion-item  *ngFor="let c of usuario; let i = index">
+        <ion-avatar slot="start">
+          <img src="../../../../assets/avatar.png">
+        </ion-avatar>
+        <ion-label >
+          <h2>{{c.nombre}}</h2>
+          <h3>{{c.direccionCorreo}}</h3>
+          <p>{{c.cedula}}</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+    <br>
+
+    <ion-button color="success" expand="block" (click)="crearUsuario()">Crear Usuario</ion-button>
+
+  </ion-list>
+
+</ion-content>

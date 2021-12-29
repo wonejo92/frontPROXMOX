@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-img   style="width: 150px; height: 150px; margin-left: auto; margin-right: auto;" src="../../../../assets/person.jpg"></ion-img>
+  <br>
+
+
+  <ion-item>
+    <ion-label position="fixed">Cedula:</ion-label>
+    <ion-input [(ngModel)]="usuario.cedula" placeholder="Jose"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="fixed">Nombre:</ion-label>
+    <ion-input  [(ngModel)]="usuario.nombre" placeholder="0994576134"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="fixed">Correo:</ion-label>
+    <ion-input [(ngModel)]="usuario.correo"  placeholder="Jose@gmail.com"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="fixed">Password:</ion-label>
+    <ion-input [(ngModel)]="usuario.password" placeholder="Jose@gmail.com"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button color="warning"expand="block" (click)="registrarse()">Save Contact</ion-button>
+
+
+
+</ion-content>
